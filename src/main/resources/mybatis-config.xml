@@ -5,11 +5,12 @@
 <configuration>
 	
   <properties resource="jdbc.properties"/>
-  
-  <typeAliases>
+
+  <typeAliases>   <!--别名-->
   
   	<package name="com.bjpowernode.crm.settings.domain"/>
-  	
+  	<package name="com.bjpowernode.crm.workbench.domain"/>
+
   
   </typeAliases>
   
@@ -26,10 +27,11 @@
   </environments>
   
  
-  <mappers>
+  <mappers><!--注册mapper-->
    
       <package name="com.bjpowernode.crm.settings.dao"/>
-    
+      <package name="com.bjpowernode.crm.workbench.dao"/>
+
   </mappers>
 </configuration>
 
